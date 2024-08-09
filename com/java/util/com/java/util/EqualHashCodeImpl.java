@@ -1,5 +1,7 @@
 package com.java.util;
 
+import java.util.ArrayList;
+
 import com.java.util.model.Address;
 import com.java.util.model.Person;
 
@@ -7,7 +9,7 @@ public class EqualHashCodeImpl {
 	
 	public static void main(String[] args) {
 		System.out.println("Hello World");
-		
+		ArrayList<Integer> ar = new ArrayList<>();
 		//Test with String Class
 		String str1 = new String("Hemant");
 		String str2 = new String("Hemant");
