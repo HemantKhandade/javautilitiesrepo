@@ -12,6 +12,7 @@ public class StreamTestReduce {
 		 * Stream.of(1,2,3,4,5).reduce(0, (a,b) -> a + b);
 		 * System.out.println("Result :: SUM 1 :: " + sum1);
 		 */
+		
 		List<Integer> numList = Arrays.asList(1, 2, 3, 4, 5);
 		Integer sum2 = numList.stream().reduce(0, (a, b) -> a + b);
 		System.out.println("Result :: SUM 2 :: " + sum2);
@@ -21,6 +22,7 @@ public class StreamTestReduce {
 		
 		int sum4 = numList.stream().reduce(0,Integer::sum);
 		System.out.println("Result :: sum4 :: " + sum4);
+		
 		
 		
 		int maxNum = numList.stream().reduce(0,(a,b) -> a > b? a:b);
